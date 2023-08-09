@@ -1,7 +1,9 @@
 
 class Player{
-  String name = 'hiano';
-  int xp = 1000;
+  final String name;
+  int xp;
+  //constructor
+  Player(this.name, this.xp);
 
   void sayHello(){
     print("hello my name is $name");
@@ -11,7 +13,7 @@ class Player{
 
 
 void main(List<String> args) {
-  var player = Player();
+  var player = Player('hiano',1000);
   player.sayHello();
   
 }
