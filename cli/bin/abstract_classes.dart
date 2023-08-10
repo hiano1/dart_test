@@ -22,6 +22,7 @@ class Player extends Human {
     print("hello my name is $name");
   }
 
+  @override
   void walk() {
     print('im walking');
   }
@@ -36,4 +37,5 @@ void main(List<String> args) {
     ..sayHello();
 
   potato.sayHello();
+  potato.walk();
 }
