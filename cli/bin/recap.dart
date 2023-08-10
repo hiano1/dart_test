@@ -14,7 +14,7 @@ class Player {
 }
 
 void main(List<String> args) {
-  var apiData = {
+  var apiData = [
     {
       "name": "hiano",
       "team": "red",
@@ -30,7 +30,11 @@ void main(List<String> args) {
       "team": "red",
       "xp": 0,
     },
-  };
+  ];
+  for (var element in apiData) {
+    var player = Player.fromJson(element);
+    player.sayHello();
+  }
 
   apiData.forEach((playerJson) {
     var player = Player.fromJson(playerJson);
